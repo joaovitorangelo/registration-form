@@ -1,0 +1,140 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-image: linear-gradient(to left,rgb(32,32,32), rgb(0,0,0));
+}
+    
+html.boddy {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 24px;
+    border-bottom: 1px solid #D8BFD8;
+}
+
+.cabecalho-image { 
+    height: 50px;
+    filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 10));
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 100px;
+}
+
+.cabecalho-menu a {
+    text-decoration: none;
+}
+
+.cabecalho-menu a:hover {
+    color: #D8BFD8;
+}
+
+.cabecalho-menu-item {
+    color: #DDA0DD;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 10));
+    cursor: pointer;
+}
+
+section {
+    height: 110vh;
+}
+
+.box {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 25%;
+    color: #DDA0DD;
+}
+
+fieldset {
+    border: 3px solid #DDA0DD;
+    border-radius: 10px;
+}
+
+legend {
+    border: 2px solid #DDA0DD;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 0 10px black;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.labelUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: white;
+}
+
+#nasciment_date {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#update {
+    background-color: black;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: #D8BFD8;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px;
+}
+
+#update:hover {
+    background-color: #DDA0DD;
+}

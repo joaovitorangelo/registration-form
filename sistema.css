@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+    background: rgb(32, 32, 32);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 50px;
+    border-bottom: 1px solid #333;
+}
+
+.cabecalho h1 {
+    color: #fff;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 100px;
+}
+
+.cabecalho-menu-item:hover {
+    color: #D8BFD8;
+}
+
+.cabecalho-menu-item {
+    color: #725372;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.exit {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.exit:hover {
+    color: #D8BFD8;
+    transform: scale(1.1);
+}
+
+.title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #D8BFD8;
+}
+
+.table-bg {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    background: rgba(141, 141, 141, 0.185)
+}
+
+.table-bg th {
+    color: #DDA0DD;
+}
+
+.table-bg td {
+    color: white;
+}
+
+.box-search {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.btn.btn-search {
+    background-color: #D8BFD8;
+}
+
+.btn.btn-primary {
+    background: #D8BFD8;
+}
+
+.btn.btn-sm.btn-primary:hover {
+    background-color: rgb(189, 158, 189);
+    transform: scale(1.1);
+}
+
+.btn.btn-sm.btn-danger:hover {
+    transform: scale(1.1);
+}
+
+.btn.btn-search:hover {
+    background-color: rgb(189, 158, 189);
+}
